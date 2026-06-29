@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1>Trivia Game</h1>
+
+            <form id="searchForm">
+                <label >Category:</label>
+                <select id="categoryInput">
+                    <option value="general">General Knowledge</option>
+                    <option value="books">Books</option>
+                    <option value="film">Film</option>
+                    <option value="music">Music</option>
+                    <option value="tv">Television</option>
+                    <option value="games">Video Games</option>
+                    <option value="boardGames">Board Games</option>
+                    <option value="science">Science & Nature</option>
+                    <option value="computers">Computers</option>
+                    <option value="math">Mathematics</option>
+                    <option value="myth">Mythology</option>
+                    <option value="sports">Sports</option>
+                    <option value="geography">Geography</option>
+                    <option value="history">History</option>
+                    <option value="politics">Politics</option>
+                    <option value="art">Art</option>
+                    <option value="celebrities">Celebrities</option>
+                    <option value="animals">Animals</option>
+                    <option value="vehicles">Vehicles</option>
+                    <option value="comics">Comics</option>
+                    <option value="gadgets">Gadgets</option>
+                    <option value="anime">Anime & Manga</option>
+                    <option value="cartoon">Cartoon & Animations</option>
+                </select>
+                <button type="submit">Search Questions</button>
+            </form>
+
+            <div class="controls">
+                <label for="difficultyFilter">Difficulty:</label>
+                <select id="difficultyFilter">
+                    <option value="all">All</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+
+                <button id="sortBtn">Sort A-Z</button>
+            </div>
+         </div>
+    </div>
+    <div class="resultsContainer">
+    <div id="status"></div>
+
+    <div id="results"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
